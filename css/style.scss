@@ -1,0 +1,103 @@
+$gray: hsl(240, 9%, 89%);
+$black: hsl(0, 0%, 0%);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  list-style-type: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center; /* Itens centralizados ao meio */
+
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+
+  margin-top: 2.4rem;
+}
+
+p {
+  margin-top: 3.2rem;
+}
+
+/* CONTENT */
+main {
+  background: url(../assets/Mobile.png);
+  width: 37.5rem;
+  height: 81.2rem;
+}
+
+.container {
+  max-width: 25rem;
+  margin: 0 auto;
+  text-align: center;
+
+  color: $gray;
+}
+
+.avatar {
+  width: 16rem;
+  margin: 18.4rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -1.5rem;
+
+  z-index: 2;
+}
+
+.avatar > img {
+  width: 16rem;
+  height: 18.4rem;
+  object-fit: cover;
+  object-position: left;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.avatar > img::before {
+  content: '';
+  height: 150%;
+  width: 150%;
+  position: absolute;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+
+  margin-top: 0.4rem;
+
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  margin-top: 6.4rem;
+
+  display: flex;
+  gap: 0.8rem;
+
+  justify-content: center;
+  align-items: center;
+}
